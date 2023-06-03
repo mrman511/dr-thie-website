@@ -1,0 +1,26 @@
+@import './variables.scss';
+
+.hero{
+
+}
+
+.services {
+  background-color: darken($background_colour, 10%);
+}
+
+.quickLinks {
+  max-width: 475px;
+  background: linear-gradient(rgb(202, 202, 202) , white 10% 90%, rgb(202, 202, 202));
+  border: 3px solid rgb(202, 202, 202);
+  border-radius: 8px;
+
+  .quickLink{
+
+    &:nth-child(1){
+      border-right: 1px solid rgb(202, 202, 202);
+    }
+    &:nth-child(2){
+      border-left: 1px solid rgb(202, 202, 202);
+    }
+  }
+}

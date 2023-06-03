@@ -1,0 +1,55 @@
+@import './variables.scss';
+
+@mixin employee {
+  display: grid;
+  grid-template: 200px / 1fr;
+  grid-auto-flow: row;
+  grid-auto-rows: auto;
+  grid-template-areas: "img";
+  
+  .imageContainer{
+    grid-area: img;
+  }
+
+  .name {
+    grid-area: img;
+  }
+
+}
+
+.dentist {
+  background-color: darken($background_colour, 30%);
+  @include employee();
+  
+  &:nth-child(even){
+    background-color: darken($background_colour, 50%);
+  }
+}
+
+.employee {
+  @include employee();
+
+  .name {
+    top: 100%;
+    transform: translateY(-100%);
+    text-align: center;
+    justify-self: center;
+  }
+
+  .imageContainer{
+    align-self: start;
+  }
+}
+
+@media only screen and (min-width: 640px){
+  
+  .dentist {
+    grid-template: 300px / 1fr 1fr;
+    grid-auto-rows: none;
+    grid-template-areas: "img" "bio";
+
+    .bio {
+      grid-area: bio;
+    }
+  }
+}

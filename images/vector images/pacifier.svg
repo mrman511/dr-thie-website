@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.57 65.23">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        stroke: #231f20;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <ellipse id="base" class="cls-1" cx="30.5" cy="37.23" rx="9" ry="27.5"/>
+  <path id="outer_ring" data-name="outer ring" class="cls-1" d="m30.5,43.23c-13.01,10.39-18.05,11.52-20,10-2.03-1.57,0-5.42,0-16s-2.03-14.43,0-16c1.95-1.52,6.99-.39,20,10v-4c-4.44-8.3-13.2-12.2-20-10C.5,20.47.5,35.08.5,37.23s0,16.76,10,20c6.8,2.2,15.56-1.7,20-10v-4Z"/>
+</svg>
