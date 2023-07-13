@@ -31,7 +31,7 @@ export default function Header({ styles }){
           <li className='mx-3'>Contact</li>
         </ul>
 
-        <ul className={ [styles.dropMenu, "w-6/6 absolute flex flex-wrap justify-evenly z-10"].join(' ') }>
+        <ul className={ [styles.dropMenu, "w-6/6 absolute flex flex-wrap justify-evenly z-50"].join(' ') }>
           <li className='mx-3 my-2'>Teeth Whitening</li>
           <li className='mx-3 my-2'>Invisalign</li>
           <li className='mx-3 my-2'>Low Level Laser Therapy</li>
