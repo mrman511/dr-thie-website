@@ -6,7 +6,7 @@ import map from '../../public/images/googlemapsplaceholder.png'
 export default function Footer({ styles }){
 
   return (
-    <footer className={ [styles.footer, 'w-full flex flex-col my-4 pt-24'].join(' ') }>
+    <footer className={ [styles.footer, 'w-full flex flex-col my-4'].join(' ') }>
       <article className="w-full flex flex-wrap justify-evenly items-center ">
         <div className="relative w-52 h-48 max-h-48 max-w-52 my-4 mx-8">
           <Image src={ tallLogo } alt="Dr. Ingrid Thie Family Dentistry" fill={ true } placeholder="empty" style={ {objectFit: 'cover'} } />

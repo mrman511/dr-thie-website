@@ -13,6 +13,8 @@ export default function collageImageSizing(image){
   const largeScale = Math.floor((Math.random() * 0.4 + 0.6) * 100 ) / 100;
   const imageWidth = image.default.width;
   const imageHeight = image.default.height;
+  const posNeg = Math.random() < .5 ? 1 : -1
+  let rotation = Math.floor(Math.random() * 10) < 2 ? 0 : 0; // rand(45) * posNeg;
 
   const sizeObj = {
     small: {
@@ -22,7 +24,7 @@ export default function collageImageSizing(image){
       marginLeft: rand(-25),
       marginRight: rand(-25),
       marginBottom: rand(-25),
-      zIndex: rand(10)
+      zIndex: rand(5)
     },
     med: {
       width: maxWidth * scale,
@@ -31,7 +33,7 @@ export default function collageImageSizing(image){
       marginLeft: rand(-50),
       marginRight: rand(-50),
       marginBottom: rand(-50),
-      zIndex: rand(10)
+      zIndex: rand(5)
     },
     large: {
       width: largeMaxWidth * largeScale,
@@ -40,8 +42,9 @@ export default function collageImageSizing(image){
       marginLeft: rand(-50),
       marginRight: rand(-50),
       marginBottom: rand(-75),
-      zIndex: rand(10)
-    }
+      zIndex: rand(5)
+    },
+    rotation: rotation,
   }
 
   return sizeObj;
