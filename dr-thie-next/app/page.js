@@ -1,19 +1,18 @@
 import Header from '@/components/globals/Header';
 import Footer from '@/components/globals/Footer';
 import ContactLinkBar from '@/components/globals/ContactLinkBar';
-import Blurb from '@/components/globals/Blurb';
-import ImageCollage from '@/components/globals/ImageCollage';
+import CardList from '@/components/globals/CardList';
 import globalStyles from '../styles/Globals.module.scss';
 
 import Hero from '@/components/index/Hero';
-import HighlightsList from '@/components/index/Highlights/HighlightsList';
-import QuickLinks from '@/components/index/QuickLinks';
-import Services from '@/components/index/Services';
+import HighlightCard from '@/components/index/HighlightCard';
+import ServiceCard from '@/components/index/ServiceCard';
 import indexStyles from '../styles/Index.module.scss';
 
-import { placeholderBlurb } from '@/utils/data/blurbs';
 import { highlights } from '@/utils/data/highlights';
 import { services } from '@/utils/data/services';
+
+import { indexSevices } from '@/utils/data/headers';
 
 export const metadata = {
   title: 'Dr. Ingrid Thie Family Dentist'
@@ -27,11 +26,8 @@ export default function Home() {
     <main className='p-4 flex flex-col'>
       <ContactLinkBar styles={ globalStyles } />
       <Hero styles={ indexStyles } globalStyles={ globalStyles }/>
-      <HighlightsList styles={ indexStyles } highlights={ highlights }/>
-      {/* <QuickLinks styles={ indexStyles }/> */}
-      {/* <Services styles={ indexStyles }/> */}
-      {/* <ImageCollage styles={ globalStyles } services={ services }/> */}
-      {/* <Blurb styles={ globalStyles } info={ placeholderBlurb }/> */}
+      <CardList styles={ indexStyles } listClass={ indexStyles.highlightsList } CardComponent={ HighlightCard } cardData={ highlights } />
+      <CardList styles={ indexStyles } listClass={ indexStyles.servicesList } CardComponent={ ServiceCard } cardData={ services } headerData={ indexSevices } />
     </main>
     <Footer styles={ globalStyles }/>
     </>
