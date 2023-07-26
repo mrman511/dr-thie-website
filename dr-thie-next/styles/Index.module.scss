@@ -4,7 +4,7 @@
   .message {
     background: radial-gradient(circle at 48% 10%, rgba(lighten($analogusGreen, 3%), .2) 13.8%, rgba(0, 0, 255, 0) 14%),
       radial-gradient(circle at 58% 125%, rgba($analogusGreen, .1) 33.8%, rgba(0, 0, 255, 0) 34%),
-      radial-gradient(circle at 90% 10%,  rgba(0, 0, 255, 0) 39.8%, darken($background_colour, 5%) 40%);
+      radial-gradient(circle at 90% 10%,  rgba(0, 0, 255, 0) 39.8%, $raisedBackgroundColour 40%);
   }
 
   button{
@@ -18,9 +18,11 @@
 }
 
 .servicesList {
+  background: radial-gradient(circle at 100% 90%,  $background_colour 15.8%, rgba(0, 0, 0, 0) 16%),
+    radial-gradient(circle at 10% 20%,  rgba(0, 0, 255, 0) 29.8%, $raisedBackgroundColour 30%);
 
   .serviceCard{
-    background-color: $background_colour;
+    background-color: transparent;
     transition: background-color .25s ease;
     
     .accentCircle{
@@ -32,7 +34,7 @@
     }
     
     &:hover{
-      background-color: rgba(darken($background_colour, 10%), .5);
+      background-color: rgba(darken($raisedBackgroundColour, 5%), 1);
       box-shadow: $lowShadow;
       z-index: 2;
       

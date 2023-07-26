@@ -1,7 +1,12 @@
 $background_colour: #e0f1ff;
 
+$raisedBackgroundColour: darken($background_colour, 5%);
+
 $analogusGreen: #D4FFFB;
 $analogus2: #C1E1E8;
 $analogusPurple: #D4D5FF;
+
+$compound1: #9FA0CC;
+$compound2: #494B99;
 
 $lowShadow: 5px 5px 10px -10px darken($background_colour, 80%);

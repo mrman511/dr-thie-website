@@ -55,6 +55,16 @@
 
 }
 
+.newPatientsButtonLinkCard{
+  color: white;
+  background-color: darken($background_colour, 60%);
+
+  a{
+    background-color: $analogus2;
+    color: black;
+  }
+}
+
 
 @media only screen and (min-width: 1000px){
   
