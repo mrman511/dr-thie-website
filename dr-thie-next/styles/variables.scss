@@ -1,4 +1,7 @@
 $background_colour: #e0f1ff;
 
 $analogusGreen: #D4FFFB;
-$analogus2: #C1E1E8
+$analogus2: #C1E1E8;
+$analogusPurple: #D4D5FF;
+
+$lowShadow: 5px 5px 10px -10px darken($background_colour, 80%);
