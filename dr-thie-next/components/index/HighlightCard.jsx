@@ -24,10 +24,10 @@ export default function objCard({ styles, obj, i }){
       </div>
 
       <div className="absolute w-full flex flex-col z-20 bottom-4 min-[400px]:bottom-12 lg:bottom-4 px-2">
-        <h4 className="text-md ">{ obj.subtext }</h4>
-        <h3 className="text-lg mt-4 mb-2">{ obj.title }</h3>
-        <p className="text-sm">{ obj.text }</p>
-        <a className="mt-2 flex items-center" href={ obj.link.path }>
+        <h4 className="text-lg font-semibold">{ obj.subtext }</h4>
+        <h3 className="text-xl mt-4 mb-2 font-bold">{ obj.title }</h3>
+        <p className="text-md">{ obj.text }</p>
+        <a className="text-lg font-semibold mt-2 flex items-center" href={ obj.link.path }>
           { obj.link.title }
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={ 3 } stroke="currentColor" className="w-4 h-4 ms-2">
           <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />

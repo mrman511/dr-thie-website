@@ -25,17 +25,17 @@ export default function Header({ styles }){
 
       <div className='hidden relative lg:block mr-4'>
         <ul className="flex items-center justify-between">
-          <li className='mx-3'>About Us</li>
-          <li className='mx-3'>Services</li>
-          <li className='mx-3'>Patient Information</li>
-          <li className='mx-3'>Contact</li>
+          <li className='mx-3 text-xl font-bold'>About Us</li>
+          <li className='mx-3 text-xl font-bold'>Services</li>
+          <li className='mx-3 text-xl font-bold'>Patient Information</li>
+          <li className='mx-3 text-xl font-bold'>Contact</li>
         </ul>
 
         <ul className={ [styles.dropMenu, "w-6/6 absolute flex flex-wrap justify-evenly z-50"].join(' ') }>
-          <li className='mx-3 my-2'>Teeth Whitening</li>
-          <li className='mx-3 my-2'>Invisalign</li>
-          <li className='mx-3 my-2'>Low Level Laser Therapy</li>
-          <li className='mx-3 my-2'>Infant Care</li>
+          <li className='mx-3 my-2 text-lg font-semibold'>Teeth Whitening</li>
+          <li className='mx-3 my-2 text-lg font-semibold'>Invisalign</li>
+          <li className='mx-3 my-2 text-lg font-semibold'>Low Level Laser Therapy</li>
+          <li className='mx-3 my-2 text-lg font-semibold'>Infant Care</li>
         </ul>
       </div>
 
