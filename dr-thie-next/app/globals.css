@@ -19,3 +19,24 @@
 body {
   background-color: rgb(224, 241, 255);
 }
+
+h2 {
+  /* font-family: var(--font-garamond) */
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+h2 {
+  font-family: var(--font-garamond)
+}
+
+h3 {
+  font-family: var(--font-garamond)
+}
+
+h4 {
+  font-family: var(--font-garamond)
+}
+
+h5 {
+  font-family: var(--font-garamond)
+}
