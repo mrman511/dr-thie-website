@@ -10,7 +10,7 @@ export default function ServiceCard({ styles, obj }){
       <div className='absolute w-24 h-24 translate-x-neg-2/4 left-2/4 top-12 z-10'>
         <Image 
           src={ icon }
-          alt='toothSvg'
+          alt={ obj.title }
           fill
           style={{ objectFit: 'contain' }}
           sizes="100px"

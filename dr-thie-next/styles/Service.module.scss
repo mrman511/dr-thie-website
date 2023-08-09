@@ -1,0 +1,9 @@
+@import './variables.scss';
+
+.serviceCard {
+  background-color: darken($raisedBackgroundColour, 5%);
+
+  a{
+    background-color: darken($raisedBackgroundColour, 15%);
+  }
+}

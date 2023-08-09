@@ -11,7 +11,7 @@ import ServiceCard from '@/components/index/ServiceCard';
 import indexStyles from '../styles/Index.module.scss';
 
 import { highlights } from '@/utils/data/highlights';
-import { services } from '@/utils/data/services';
+import { servicesHighlights } from '@/utils/data/services';
 
 import { indexSevices } from '@/utils/data/headers';
 
@@ -30,7 +30,7 @@ export default function Home() {
       <ContactLinkBar styles={ globalStyles } />
       <Hero styles={ indexStyles } globalStyles={ globalStyles }/>
       <CardList styles={ indexStyles } listClass={ indexStyles.highlightsList } CardComponent={ HighlightCard } cardData={ highlights } />
-      <CardList styles={ indexStyles } listClass={ indexStyles.servicesList } CardComponent={ ServiceCard } cardData={ services } headerData={ indexSevices } />
+      <CardList styles={ indexStyles } listClass={ indexStyles.servicesList } CardComponent={ ServiceCard } cardData={ servicesHighlights } headerData={ indexSevices } />
       <ButtonLinkCard styles={ globalStyles } data={ newPatientsCard }/>
     </main>
     <Footer styles={ globalStyles }/>
