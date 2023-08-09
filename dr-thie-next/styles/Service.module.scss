@@ -1,5 +1,13 @@
 @import './variables.scss';
 
+.serviceLists {
+  background: radial-gradient(circle at 90% 85%,  $background_colour 8%, rgba(0, 0, 0, 0) 8.2%),
+    radial-gradient(circle at 60% 50%,  $background_colour 20.8%, rgba(0, 0, 0, 0) 21%),
+    radial-gradient(circle at 20% 70%,  $background_colour 5.8%, rgba(0, 0, 0, 0) 6%),
+    radial-gradient(circle at 70% 20%,  $background_colour 5.8%, rgba(0, 0, 0, 0) 6%),
+    radial-gradient(circle at 10% 10%,  rgba(0, 0, 255, 0) 8%, $raisedBackgroundColour 8.1%);
+}
+
 .serviceCard {
   background-color: darken($raisedBackgroundColour, 5%);
 

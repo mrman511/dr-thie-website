@@ -5,7 +5,7 @@ export default function ServiceCard({ styles, obj, i }){
   const image = require(`../../public/images/services/photos/${obj.image_path}`)
   
   return (
-    <article className={ [styles.serviceCard, 'rounded-md relative flex flex-col w-[300px] h-[450px] m-4 overflow-hidden'].join(' ') }>
+    <article className={ [styles.serviceCard, 'rounded-md relative flex flex-col w-[300px] h-[450px] mx-0 my-4 sm:m-4 overflow-hidden'].join(' ') }>
       <div className='relative w-full h-48'>
         <Image 
           src={ image }

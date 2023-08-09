@@ -37,8 +37,10 @@ export default function Services() {
   return (
     <>
     <Header styles={ globalStyles }/>
-    <main id='servicesLists' className='flex flex-col'>
-      { lists }
+    <main id='servicesLists' className='flex flex-col items-center'>
+      <section className={ [serviceStyles.serviceLists, 'w-11/12 my-4 flex flex-col'].join(' ')}>
+        { lists }
+      </section>
     </main>
     <Footer styles={ globalStyles }/>
     </>
