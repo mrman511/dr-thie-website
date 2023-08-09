@@ -34,7 +34,7 @@
     }
     
     &:hover{
-      background-color: rgba(darken($raisedBackgroundColour, 5%), 1);
+      background-color: darken($raisedBackgroundColour, 5%);
       box-shadow: $lowShadow;
       z-index: 2;
       
