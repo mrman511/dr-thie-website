@@ -2,7 +2,30 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from '../../public/logos/logo-full.jpg';
 
+import { AnimatePresence } from "framer-motion";
+// import { useState } from "react";
+
+
 export default function Header({ styles }){
+
+  // const [showNav, setShowNav] = useState(false)
+
+  const dropNavService = (
+    <div className={ [styles.dropServicesMenu, "w-full absolute overflow-hidden rounded-md"].join(' ') }>
+      <ul className={ ["", "relative w-full min-h-12  flex flex-wrap justify-evenly z-50"].join(' ') }>
+        <Link href='/services/#preventive-service-list'>
+          <li className='px-3 py-2 text-lg font-semibold'>Preventive</li>
+        </Link>
+        <Link href='/services/#restorative-service-list'>
+          <li className='px-3 py-2 text-lg font-semibold'>Restorative</li>
+        </Link>
+        <Link href='/services/#cosmetic-service-list'>
+          <li className='px-3 py-2 text-lg font-semibold'>Cosmetic</li>
+        </Link>
+      </ul>
+    </div>
+  )
+
 
   return (
     <header className="w-full flex p-4 bg-white justify-between items-center">
@@ -25,19 +48,15 @@ export default function Header({ styles }){
         <div className="w-12 h-1 bg-gray-600"></div>
       </div>
 
-      <div className='hidden relative lg:block mr-4'>
+      <div className={ [styles.navbar, 'hidden relative lg:block mr-4'].join(' ') }>
         <ul className="flex items-center justify-between">
-          <Link href='/about'><li className='mx-3 text-xl font-bold'>About Us</li></Link>
-          <Link href='/services'><li className='mx-3 text-xl font-bold'>Services</li></Link>
-          <li className='mx-3 text-xl font-bold'>Patient Information</li>
-          <li className='mx-3 text-xl font-bold'>Contact</li>
-        </ul>
-
-        <ul className={ [styles.dropMenu, "w-6/6 absolute flex flex-wrap justify-evenly z-50"].join(' ') }>
-          <li className='mx-3 my-2 text-lg font-semibold'>Teeth Whitening</li>
-          <li className='mx-3 my-2 text-lg font-semibold'>Invisalign</li>
-          <li className='mx-3 my-2 text-lg font-semibold'>Low Level Laser Therapy</li>
-          <li className='mx-3 my-2 text-lg font-semibold'>Infant Care</li>
+          <li className={ ['', 'mx-3 flex justify-center text-xl font-bold'].join(' ')}><Link href='/about'>About Us</Link></li>
+          <li  className={ [styles.navbarServices, 'mx-3 flex justify-center text-xl font-bold'].join(' ')} >
+            <Link href='/services'>Services</Link>
+            { dropNavService }
+          </li>
+          <li className={ ['', 'mx-3 flex justify-center text-xl font-bold'].join(' ')}>Patient Information</li>
+          <li className={ ['', 'mx-3 flex justify-center text-xl font-bold'].join(' ')}>Contact</li>
         </ul>
       </div>
 
