@@ -18,7 +18,7 @@ export default function ServiceCard({ styles, obj, i }){
 
       <div className="w-full flex flex-col items-center text-center top-40">
         <h3 className="text-xl font-semibold my-2">{ obj.title }</h3>
-        <h4>{ obj.subheading }</h4>
+        <h4 className="text-lg">{ obj.subheading }</h4>
         <a className='rounded-sm text-lg font-semibold my-2 px-4 py-2' href="">Learn More</a>
         <a className='rounded-sm text-lg font-semibold my-2 px-4 py-2' href="">Request Appointment</a>
       </div>
