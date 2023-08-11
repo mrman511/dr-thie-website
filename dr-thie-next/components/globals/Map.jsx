@@ -47,6 +47,7 @@ export default function Map(){
             <div className='relative h-16 w-16 me-2'>
               <Image 
                 src={ logo }
+                alt="Dr. Ingrid Thie - Logo"
                 fill= { true }
                 style={{ objectFit: 'cover' }}
                 sizes='100px'

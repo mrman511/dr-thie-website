@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from '../../public/logos/logo-full.jpg';
-
-import { AnimatePresence } from "framer-motion";
 // import { useState } from "react";
 
 
@@ -29,18 +27,18 @@ export default function Header({ styles }){
 
   return (
     <header className="w-full flex p-4 bg-white justify-between items-center">
-      <div className="relative w-4/6 sm:w-3/6 lg:w-2/6 h-16 sm:h-20  flex">
-        <Link href="/">
-        <Image 
-          src={ logo } 
-          alt="Dr Ingid Thie Family Dentist"
-          style={{objectFit: "contain"}}
-          fill={ true }
-          priority={ true }
-          sizes='(max-width: 600px) 66vw, (max-width: 768) 50vw, 33vw'
-          />
-       </Link>
-      </div>
+      <Link href="/">
+        <div className="relative w-4/6 sm:w-3/6 lg:w-2/6 h-16 sm:h-20  flex">
+          <Image 
+            src={ logo } 
+            alt="Dr Ingid Thie Family Dentist"
+            style={{objectFit: "contain"}}
+            fill={ true }
+            priority={ true }
+            sizes='(max-width: 600px) 66vw, (max-width: 768) 50vw, 33vw'
+            />
+        </div>
+      </Link>
 
       <div className="space-y-3 px-4 lg:hidden">
         <div className="w-12 h-1 bg-gray-600"></div>

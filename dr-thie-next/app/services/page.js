@@ -1,4 +1,3 @@
-'use client'
 import Header from '@/components/globals/Header';
 import Footer from '@/components/globals/Footer';
 import CardList from '@/components/globals/CardList';
