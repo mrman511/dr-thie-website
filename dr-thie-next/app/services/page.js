@@ -10,9 +10,9 @@ import { listofTags, objsWithTag} from '@/utils/helpers/tags';
 import { services } from '@/utils/data/services';
 import { serviceListHeaders } from '@/utils/data/headers';
 
-// export const metadata = {
-//   title: 'Services - Dr. Ingrid Thie'
-// }
+export const metadata = {
+  title: 'Services - Dr. Ingrid Thie'
+}
 
 export default function Services() {
   const tags = listofTags(services)

@@ -27,8 +27,8 @@ export default function Header({ styles }){
 
   return (
     <header className="w-full flex p-4 bg-white justify-between items-center">
-      <Link href="/">
-        <div className="relative w-4/6 sm:w-3/6 lg:w-2/6 h-16 sm:h-20  flex">
+      <div className="w-4/6 sm:w-3/6 lg:w-2/6 h-16 sm:h-20  flex">
+        <Link href="/" className="relative w-full h-full">
           <Image 
             src={ logo } 
             alt="Dr Ingid Thie Family Dentist"
@@ -37,8 +37,8 @@ export default function Header({ styles }){
             priority={ true }
             sizes='(max-width: 600px) 66vw, (max-width: 768) 50vw, 33vw'
             />
-        </div>
-      </Link>
+        </Link>
+      </div>
 
       <div className="space-y-3 px-4 lg:hidden">
         <div className="w-12 h-1 bg-gray-600"></div>
