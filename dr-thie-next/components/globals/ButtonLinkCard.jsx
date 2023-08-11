@@ -2,7 +2,6 @@
 export default function ButtonLinkCard({ styles, data }){
 
   const styleString = data.className + 'ButtonLinkCard'
-  console.log(styles)
 
   return(
     <section className={ [styles[styleString], 'w-full flex flex-col items-center text-center self-center py-12 px-8'].join(' ') }>
