@@ -16,7 +16,11 @@
 }
 
 .footer {
-  background-color: white;
+  background-color: $background_colour;
+
+  article{
+    background-color: white;
+  }
 
   .foot {
     background-color: darken($color: $background_colour, $amount: 75%);
