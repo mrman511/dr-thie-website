@@ -1,4 +1,3 @@
-"use client"
 import Header from '@/components/globals/Header';
 import Footer from '@/components/globals/Footer';
 import ContactLinkBar from '@/components/globals/ContactLinkBar';
@@ -19,9 +18,9 @@ import { indexSevices } from '@/utils/data/headers';
 
 import { newPatientsCard } from '@/utils/data/buttonCardLinks';
 
-// export const metadata = {
-//   title: 'Dr. Ingrid Thie Family Dentist'
-// }
+export const metadata = {
+  title: 'Dr. Ingrid Thie Family Dentist'
+}
 
 export default function Home() {
   
