@@ -3,17 +3,17 @@ import Image from "next/image";
 export default function objCard({ styles, obj, i }){
   const image = require(`../../public/images/highlights/${obj.image.path}`)
 
-  let darkenClass = 'absolute hidden w-full h-full z-20 opacity-50 bg-black'
+  let darkenClass = 'absolute w-full h-full z-20 opacity-50 bg-blue-800'
 
-  i % 1 !== 0 ? darkenClass += ' sm:block' : '';
-  i === 1 || i === 2 ? darkenClass += ' sm:block' : '';
-  i === 2 ? darkenClass += ' lg:hidden' : '';
-  i === 3 ? darkenClass += ' lg:block' : '';
+  i % 1 !== 0 ? darkenClass += ' sm:bg-blue-500' : '';
+  i === 1 || i === 2 ? darkenClass += ' sm:bg-blue-500' : '';
+  i === 2 ? darkenClass += ' lg:bg-blue-800' : '';
+  i === 3 ? darkenClass += ' lg:bg-blue-500' : '';
 
   return(
     <article className={ [styles.highlightCard, "relative w-11/12 sm:w-6/12 lg:w-3/12 max-sm:my-2 overflow-hidden"].join(' ') }>
       <div className={ darkenClass }></div>
-      <div className={ [styles.imageContainer, "relative w-full scale-125 opacity-40 z-10"].join(' ') }>
+      <div className={ [styles.imageContainer, "relative w-full scale-125 z-10"].join(' ') }>
         <Image 
           src={ image }
           alt={ obj.image.title }

@@ -13,6 +13,7 @@ import MapSection from '@/components/globals/MapSection';
 
 import { highlights } from '@/utils/data/highlights';
 import { serviceHighlights } from '@/utils/data/services';
+import clinicData from '@/utils/data/clinicData';
 
 import { indexSevices } from '@/utils/data/headers';
 
@@ -27,13 +28,13 @@ export default function Home() {
   return (
     <>
     <Header styles={ globalStyles }/>
-    <main className='p-4 pb-0 flex flex-col items center'>
+    <main className='p-4 pb-0 flex flex-col items-center'>
       <ContactLinkBar styles={ globalStyles } />
       <Hero styles={ indexStyles } globalStyles={ globalStyles }/>
       <CardList styles={ indexStyles } listClass={ indexStyles.highlightsList } CardComponent={ HighlightCard } cardData={ highlights } />
       <CardList styles={ indexStyles } listClass={ indexStyles.servicesList } CardComponent={ ServiceCard } cardData={ serviceHighlights } headerData={ indexSevices } />
       <ButtonLinkCard styles={ globalStyles } data={ newPatientsCard }/>
-      <MapSection />
+      <MapSection clinicData={ clinicData }/>
     </main>
     <Footer styles={ globalStyles }/>
     </>

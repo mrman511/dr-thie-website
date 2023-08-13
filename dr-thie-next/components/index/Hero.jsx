@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import heroImage from '../../public/images/heroImage.jpeg';
 import Blurb from "../globals/Blurb";
 
@@ -26,9 +27,11 @@ export default function Hero({ styles, globalStyles, info }){
             <h3 className=''>Bringing Smiles to Life: Your Dental Care Experts</h3>
           </div>
           <div className="text-md sm:text-lg font-semibold">
-            <p>Call us today to book an appointment or request an appointment online.</p>
+            <p>Call us today to book an appointment!</p>
           </div>
-          <button className="rounded-md w-48 h-12 mt-4 text-2xl self-center">Get Started</button>
+          <Link href="tel:7783161843">
+            <button className="rounded-md w-48 h-12 mt-4 text-2xl self-center">Call Now</button>
+          </Link>
         </div>
       </article>
     </section>

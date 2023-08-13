@@ -54,7 +54,9 @@ export default function Header({ styles }){
             { dropNavService }
           </li>
           <li className={ ['', 'mx-3 flex justify-center text-xl font-bold'].join(' ')}>Patient Information</li>
-          <li className={ ['', 'mx-3 flex justify-center text-xl font-bold'].join(' ')}>Contact</li>
+          <li className={ ['', 'mx-3 flex justify-center text-xl font-bold'].join(' ')}>
+            <Link href="/contact">Contact</Link>
+          </li>
         </ul>
       </div>
 
