@@ -40,3 +40,15 @@ h4 {
 h5 {
   font-family: var(--font-garamond)
 }
+
+
+/* GOOGLE MAPS */
+
+.gm-style .gm-style-iw-c {
+  top: -1em !important;
+}
+
+.gm-style .gm-style-iw-tc::after{
+  height: 3em !important;
+  top: -1.5em !important;
+}

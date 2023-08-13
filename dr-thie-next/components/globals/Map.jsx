@@ -54,7 +54,8 @@ export default function Map({ clinicData }){
                 sizes='100px'
               />
             </div>
-            <p className="storemapper.popup-address">{ address }</p>
+            <p className="storemapper.popup-address">{ clinicData.street_address }</p>
+            <p className="storemapper.popup-address">{ `${clinicData.city}, ${clinicData.region} ` }</p>
             <p className="storemapper.popup-phone">{ clinicData.phone_number }</p>
           </>
         </InfoWindow>
