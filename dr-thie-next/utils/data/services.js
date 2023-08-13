@@ -36,7 +36,7 @@ export const serviceHighlights = [
   {
     title: 'Teeth Whitening',
     image_path: 'whitening.jpeg',
-    icon: 'whitning.svg',
+    icon: 'whitening.svg',
     description: lorem,
   },
   {
@@ -144,12 +144,12 @@ export const services = [
     tags: ['restorative'],
   },
   {
-    id: 'whitning',
-    title: 'Teeth Whitning',
+    id: 'whitening',
+    title: 'Teeth Whitening',
     subheading: 'Illuminating Smiles: Effective Teeth Whitening Solutions for a Radiant Glow.',
     short_description: `Over time, teeth can become stained or discolored due to factors like aging, consumption of staining foods and beverages, or tobacco use. Our professional teeth whitening treatments utilize advanced techniques to safely and effectively remove stains, revealing a brighter, more radiant smile.`,
     description: '',
-    image_path:'whitning.jpeg',
+    image_path:'whitening.jpeg',
     tags: ['cosmetic'],
   },
   {

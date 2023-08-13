@@ -30,7 +30,7 @@ export const highlights = [
   {
     subtext: 'Smile Brightly',
     title: 'Cosmetic Treatments',
-    text: 'Enhance smiles and boost confidence, with teeth whitning, vaneers and Invisalign.',
+    text: 'Enhance smiles and boost confidence, with teeth whitening, vaneers and Invisalign.',
     link: {
       title: 'Learn More',
       path: '',

@@ -1,12 +1,13 @@
+'use client'
 import { useState, useEffect, useMemo } from 'react';
 import { useLoadScript, GoogleMap, Marker, InfoWindow } from "@react-google-maps/api";
 import Image from 'next/image';
 import logo from '../../public/logos/logo-basic-transparent.png';
 
-export default function Map(){
+export default function Map({ clinicData }){
   const [google, setGoogle] = useState(null);
   const [location, setLocation] = useState(null);
-  const address = '390 Commissioners Rd W Suite 101, London, ON N6J 1Y3';
+  const address = `${clinicData.street_address}, ${clinicData.region}, ${clinicData.country}`;
   const libraries = useMemo(()=>['places'], []);
 
   const isLoaded = useLoadScript({
@@ -33,7 +34,7 @@ export default function Map(){
 
 
   return (
-    <div className="relative w-full h-72 my-4 sm:w-3/6 sm:h-6/6 lg:w-4/6 justify-self-end rounded-lg overflow-hidden">
+    <div className="w-full h-full">
       { location && <GoogleMap 
         zoom={ 15 }
         center={ location }
@@ -42,9 +43,9 @@ export default function Map(){
       >
         <Marker position={ location }>
         </Marker>
-        <InfoWindow position={ location }>
-          <div className='flex items-center'>
-            <div className='relative h-16 w-16 me-2'>
+        <InfoWindow position={ location } >
+            <>
+            <div className='storemapper-logo relative h-12 w-12'>
               <Image 
                 src={ logo }
                 alt="Dr. Ingrid Thie - Logo"
@@ -53,11 +54,9 @@ export default function Map(){
                 sizes='100px'
               />
             </div>
-            <div>
-              <h4 className='text-lg font-medium'>Dr. Ingrid Thie</h4>
-              <h5 className='text-lg'>Family Dentist</h5>
-            </div>
-          </div>
+            <p className="storemapper.popup-address">{ address }</p>
+            <p className="storemapper.popup-phone">{ clinicData.phone_number }</p>
+          </>
         </InfoWindow>
       </GoogleMap> }
     </div>

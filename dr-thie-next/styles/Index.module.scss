@@ -13,7 +13,7 @@
 }
 
 .highlightsList{
-  background-image: radial-gradient( darken($background_colour, 70%), darken($background_colour, 60%), darken($background_colour, 70%));
+  background-color: darken($background_colour, 30%);
   color: white;
 }
 
