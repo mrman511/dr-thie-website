@@ -1,56 +1,38 @@
-const lorem = 'Sed ut perspiciatis unde omnis iste natus error.'
-
 export const serviceHighlights = [
   {
     title: 'Restorative Dental Care',
     image_path: 'restorative.jpeg',
     icon: 'restorative.svg',
-    description: lorem,
   },
   {
     title: 'Crowns and Veneers',
     image_path: 'crown.jpeg',
     icon: 'crown.svg',
-    description: lorem,
   },
-  // {
-  //   title: 'Laser Periodontal Care',
-  //   image_path: 'periodontal.jpeg',
-  //   description: lorem,
-  // },
-  // {
-  //   title: 'Laser Cold Sore Treatments',
-  //   image_path: 'coldsore.jpeg',
-  // },
   {
     title: 'Sports and Bruxism Gaurds',
     image_path: 'sports-guard.jpeg',
     icon: 'guard.svg',
-    description: lorem,
   },
-  // {
-  //   title: 'Bruxism Guards',
-  //   image_path: 'bruxism.jpeg',
-  //   description: lorem,
-  // },
   {
     title: 'Teeth Whitening',
     image_path: 'whitening.jpeg',
     icon: 'whitening.svg',
-    description: lorem,
   },
   {
     title: 'Invisalign',
     image_path: 'invisalign.jpeg',
     icon: 'invisalign.svg',
-    description: lorem,
   },
-  // {
-  //   title: 'Itero Scanning',
-  //   image_path: 'itero.jpg',
-  //   description: lorem,
-  // },
 ]
+
+// async 
+function getDescriptionData(slug){
+  // const post = await import(`../../posts/${params.slug}.md`)
+  // console.log(post.default)
+  // console.log(post.metadata)
+  return('')
+}
 
 export const services = [
   {
@@ -58,7 +40,7 @@ export const services = [
     title: 'Dental Cleanings',
     subheading: `Offer professional dental cleanings to remove plaque, tartar, and stains that regular brushing and flossing can't address`,
     short_description: `Experience the Refreshing Clean: Our dental cleaning services offer a thorough and invigorating way to maintain your oral health. Our skilled hygienists use advanced techniques to remove plaque, tartar, and surface stains, leaving your teeth feeling rejuvenated and your smile shining bright. Regular dental cleanings play a vital role in preventing gum disease and maintaining overall oral wellness, ensuring you enjoy a confident and healthy smile.`,
-    description: '',
+    description: getDescriptionData(),
     image_path:'cleaning.jpeg',
     tags: ['preventive'],
   },

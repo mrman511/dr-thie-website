@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <>
     <Header styles={ globalStyles }/>
-    <main className='p-4 pb-0 flex flex-col items-center'>
+    <main className={ [styles.main, 'm-4 pb-0 flex flex-col items-center'].join(' ')}>
       <ContactLinkBar styles={ globalStyles } />
       <Hero styles={ indexStyles } globalStyles={ globalStyles }/>
       <CardList styles={ indexStyles } listClass={ indexStyles.highlightsList } CardComponent={ HighlightCard } cardData={ highlights } />
