@@ -32,7 +32,7 @@ During a dental cleaning, your skilled dental hygienist will:
 
 3. Floss and Rinse: Your hygienist will floss between your teeth and rinse your mouth to remove any remaining debris.
 
-5. Professional Guidance: Your hygienist will provide personalized guidance on improving your oral hygiene routine, including brushing techniques and flossing tips.
+4. Professional Guidance: Your hygienist will provide personalized guidance on improving your oral hygiene routine, including brushing techniques and flossing tips.
 
 #### Conclusion
 
