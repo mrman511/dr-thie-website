@@ -23,16 +23,16 @@ export default {
     },
     Wednesday:{
       is_open: true,
-      open : '8 pm',
+      open : '8 am',
       closed: '4 pm',
     },
     Thursday:{
       is_open: true,
-      open : '12 pm',
+      open : '8 am',
       closed: '4 pm',
     },
     Friday:{
-      is_open: false
+      is_open: false,
     },
     Saturday:{
       is_open: false,

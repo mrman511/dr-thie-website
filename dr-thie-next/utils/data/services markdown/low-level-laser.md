@@ -37,8 +37,7 @@ Low Level Laser Therapy has been shown over the years to be an essential tool fo
 ## Frequently Asked Questions Regarding Low Level Laser Therapy
 
 #### 1. Is this treatment going to hurt?
-Everyone is different but:
-Our office believes in gentle dental care so we will provide you with any necessary anesthetics, either topical that we pain onto the gym pocket of actually provide you with an injection to insure that you are totally comfortable with the procedure. One of the remarkable benefits of using the laser is how non-invasive and comfortable the procedure is.
+Everyone is different however, ur office believes in gentle dental care so we will provide you with any necessary anesthetics, either topical that we pain onto the gym pocket of actually provide you with an injection to insure that you are totally comfortable with the procedure. One of the remarkable benefits of using the laser is how non-invasive and comfortable the procedure is.
 
 #### 2. Am I going to have pain afterwards?
 This is the advantage of using the laser, as it is very non-invasive.

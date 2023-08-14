@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 export default function ServiceCard({ styles, obj, i }){
-  console.log(obj);
   const image = require(`../../public/images/services/photos/${obj.image_path}`)
   
   return (

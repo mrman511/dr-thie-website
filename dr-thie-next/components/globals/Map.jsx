@@ -41,8 +41,8 @@ export default function Map({ clinicData }){
         mapTypeId={google.maps.MapTypeId.ROADMAP}
         mapContainerStyle={{ width: '100%', height: '100%' }}
       >
-        <Marker position={ location }>
-        </Marker>
+        {/* <Marker position={ location }>
+        </Marker> */}
         <InfoWindow position={ location } >
             <>
             <div className='storemapper-logo relative h-12 w-12'>

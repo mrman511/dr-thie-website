@@ -45,10 +45,10 @@ h5 {
 /* GOOGLE MAPS */
 
 .gm-style .gm-style-iw-c {
-  top: -1em !important;
+  top: -2em !important;
 }
 
 .gm-style .gm-style-iw-tc::after{
-  height: 3em !important;
-  top: -1.5em !important;
+  height: 4em !important;
+  top: -2.5em !important;
 }
