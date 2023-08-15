@@ -4,9 +4,8 @@ import logo from '../../public/logos/logo-full.jpg';
 // import { useState } from "react";
 
 
-export default function Header({ styles }){
 
-  // const [showNav, setShowNav] = useState(false)
+export default function Header({ styles }){
 
   const dropNavService = (
     <div className={ [styles.dropServicesMenu, "w-full absolute overflow-hidden rounded-md"].join(' ') }>
@@ -53,7 +52,9 @@ export default function Header({ styles }){
             <Link href='/services'>Services</Link>
             { dropNavService }
           </li>
-          <li className={ ['', 'mx-3 flex justify-center text-xl font-bold'].join(' ')}>Patient Information</li>
+          <li className={ ['', 'mx-3 flex justify-center text-xl font-bold'].join(' ')}>
+            <Link href="/information">Patient Information</Link>
+          </li>
           <li className={ ['', 'mx-3 flex justify-center text-xl font-bold'].join(' ')}>
             <Link href="/contact">Contact</Link>
           </li>

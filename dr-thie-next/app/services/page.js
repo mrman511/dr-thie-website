@@ -7,7 +7,7 @@ import ServiceCard from '@/components/services/ServiceCard';
 import serviceStyles from '../../styles/Service.module.scss'
 
 import { listofTags, objsWithTag} from '@/utils/helpers/tags';
-import { services } from '@/utils/data/services';
+import { servicesList } from '@/utils/data/services/services';
 import { serviceListHeaders } from '@/utils/data/headers';
 
 export const metadata = {
@@ -15,9 +15,9 @@ export const metadata = {
 }
 
 export default function Services() {
-  const tags = listofTags(services)
+  const tags = listofTags(servicesList)
   const lists = tags.map(tag => {
-    const taggedServices = objsWithTag(tag, services);
+    const taggedServices = objsWithTag(tag, servicesList);
     if (taggedServices){
       return (
         <CardList
