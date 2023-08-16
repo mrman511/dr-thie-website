@@ -1,31 +1,3 @@
-export const serviceHighlights = [
-  {
-    title: 'Restorative Dental Care',
-    image_path: 'restorative.jpeg',
-    icon: 'restorative.svg',
-  },
-  {
-    title: 'Crowns and Veneers',
-    image_path: 'crown.jpeg',
-    icon: 'crown.svg',
-  },
-  {
-    title: 'Sports and Bruxism Gaurds',
-    image_path: 'sports-guard.jpeg',
-    icon: 'guard.svg',
-  },
-  {
-    title: 'Teeth Whitening',
-    image_path: 'whitening.jpeg',
-    icon: 'whitening.svg',
-  },
-  {
-    title: 'Invisalign',
-    image_path: 'invisalign.jpeg',
-    icon: 'invisalign.svg',
-  },
-]
-
 import bonding from "./bonding";
 import bruxism from "./bruxism";
 import cleaning from "./cleaning";

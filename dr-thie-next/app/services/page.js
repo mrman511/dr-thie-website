@@ -24,7 +24,7 @@ export default function Services() {
         key={ `${tag}-service-list` } 
         styles={ serviceStyles } 
         listClass={ serviceStyles[tag + 'List'] } 
-        listId={ `${tag}-service-list` } 
+        listId={ `${tag}` } 
         CardComponent={ ServiceCard } 
         cardData={ taggedServices } 
         headerData={ serviceListHeaders[tag] }
