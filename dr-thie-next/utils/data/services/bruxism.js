@@ -1,5 +1,5 @@
 export default {
-  id: 'bruxism_guards',
+  id: 'bruxism',
   title: 'Bruxism Guards',
   subheading: 'Guarding Your Smile and Comfort: Custom Bruxism Guards for Nighttime Protection.',
   short_description: `Relieve Nighttime Grinding and Clenching: Our custom bruxism guards offer a tailored solution to protect your teeth and alleviate the effects of nighttime teeth grinding and clenching. Crafted for your unique bite, these comfortable guards provide a barrier that prevents dental damage, jaw pain, and sleep disruption, ensuring you wake up refreshed and with a healthier smile.`,

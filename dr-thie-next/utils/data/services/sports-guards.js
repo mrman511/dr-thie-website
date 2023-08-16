@@ -1,5 +1,5 @@
 export default {
-  id: 'sports_guards',
+  id: 'sports',
   title: 'Sports Guards',
   subheading: `Elevate Your Game Safely: Custom Sports Guards for Athlete Protection.`,
   short_description: `Unleash Your Potential with Confidence: Our custom sports guards are designed to provide athletes with the ultimate protection during physical activities. Tailored to fit comfortably and securely, these guards act as a barrier against potential impacts and injuries to the teeth, lips, and jaw. Whether you're a seasoned athlete or just starting out, our sports guards are an essential accessory to help you perform at your best while ensuring your oral safety.`,
