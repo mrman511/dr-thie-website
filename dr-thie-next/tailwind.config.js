@@ -16,6 +16,7 @@ module.exports = {
         'neg-2/4': '-50%',
         'neg-4/4': '-100%',
       }
+      
     },
   },
   plugins: [],
