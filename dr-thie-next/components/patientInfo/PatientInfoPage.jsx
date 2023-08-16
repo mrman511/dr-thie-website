@@ -11,9 +11,7 @@ export default function PatientInfoPage({ styles, info }){
         </div>
         <p>{ info.patient_info.description }</p>
       </article>
-
       { parsedSections }
-
     </section>
   )
 }

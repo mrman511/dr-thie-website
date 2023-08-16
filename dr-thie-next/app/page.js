@@ -14,7 +14,7 @@ import indexStyles from '../styles/Index.module.scss';
 import clinicData from '@/utils/data/clinicData';
 import { highlights } from '@/utils/data/highlights';
 import { indexSevices } from '@/utils/data/headers';
-import { serviceHighlights } from '@/utils/data/services/services';
+import { serviceHighlights } from '@/utils/data/highlights';
 
 
 import { newPatientsCard } from '@/utils/data/buttonCardLinks';

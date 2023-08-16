@@ -13,8 +13,25 @@
 }
 
 .highlightsList{
-  background-color: darken($background_colour, 30%);
   color: white;
+
+}
+
+.highlightCard {
+
+  .imageContainer{
+    top: 0;
+    left: 0;
+    transition: all 10s linear;
+  }
+
+  &:hover{
+
+    .imageContainer{
+      top: -20%;
+      left: -20%;
+    }
+  }
 }
 
 .servicesList {

@@ -2,8 +2,9 @@ import CardListHeader from "./CardListHeader"
 
 export default function CardList({ styles, CardComponent, listClass, listId, cardData, headerData}){
 
-  const hasHeader = headerData ? <CardListHeader styles={ styles } data={ headerData }/> : false;
+  const hasHeader = headerData ? <CardListHeader styles={ styles } data={ headerData }/> : null;
   const id = listId ? listId : '';
+  console.log(id);
 
   const parsedCards = cardData.map((obj, i) =>
     <CardComponent
