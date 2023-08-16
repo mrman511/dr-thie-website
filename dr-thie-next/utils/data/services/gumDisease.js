@@ -7,13 +7,9 @@ export default {
   image_path:'gum-disease.jpeg',
   tags: ['preventive'],
   patient_info: {
-    title: ``,
-    description: ``,
+    title: `Defend Your Smile: Preventing Gum Disease for Lifelong Oral Health`,
+    description: `Gum disease, also known as periodontal disease, is a common yet preventable condition that can have serious implications for your oral health. Fortunately, taking proactive steps to prevent gum disease can help you maintain healthy gums and a radiant smile. In this article, we'll explore the importance of gum disease prevention, its causes, and practical measures you can take to safeguard your oral well-being.`,
     sections: [
-      {
-        title: `Defend Your Smile: Preventing Gum Disease for Lifelong Oral Health`,
-        description: `Gum disease, also known as periodontal disease, is a common yet preventable condition that can have serious implications for your oral health. Fortunately, taking proactive steps to prevent gum disease can help you maintain healthy gums and a radiant smile. In this article, we'll explore the importance of gum disease prevention, its causes, and practical measures you can take to safeguard your oral well-being.`,
-      },
       {
         title: `Understanding Gum Disease`,
         description: `Gum disease occurs when plaque, a sticky film of bacteria, accumulates on the teeth and gums. If left untreated, it can progress from mild inflammation (gingivitis) to more severe stages that can lead to tooth loss and impact your overall health.`,
@@ -52,7 +48,7 @@ export default {
         }
       },
       {
-        title: `## Practical Steps for Gum Disease Prevention`,
+        title: `Practical Steps for Gum Disease Prevention`,
         info_list: {
           is_ordered: true,
           list: [

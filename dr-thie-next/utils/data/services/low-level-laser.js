@@ -44,24 +44,24 @@ export default {
           is_ordered: false,
           list: [
             {
-              heading: `SOFT TISSUE LESIONS`,
+              heading: `Soft Tissue Lesions`,
               subheading: `such as herpes, aphthous ulcers, denture sores and angular cheilitis`,
               text: `Low Level Laster has shown success in reducing pain and preventing lesions from developing if the laser is applied during the prodromal stage. A decreased recurrence rate has also been reported.`,
             },
             {
-              heading: `IMPLANTS`,
+              heading: `Implants`,
               text: `In addition to helping reduction of post-surgical pain, osseointegration is accelerated to owing to stimulation of osteoblasts.`,
             },
             {
-              heading: `ORTHODONTICS`,
+              heading: `Orthodontics`,
               text: `Low Level Laser may increase the speed of treatment because of the stimulation of osteoblasts. A recent study showed a significant decrease in pain, along with an increased velocity of tooth movement.`,
             },
             {
-              heading: `DENTIN HYPERSENSITIVITY`,
+              heading: `Dentin Hypersensitivity`,
               text: `Treatment with Low Level Laser first to provide analgesia, then follow with an application of dentin primer and bond. Success rates of 85% have been reported. This may be due to the photography’s ability to reduce conduction of C-fibers, which carry pulpal pain, as well as stimulation of B-endorphins.`,
             },
             {
-              heading: `SAFETY OF LOW LEVEL LASER THERAPY`,
+              heading: `Safety Of Low Level Lazer Therapy`,
               text: `There are no clinical significant side-effects to Low Level Laser Therapy. A substantial body of sound scientific date has shown this technology to be safe and effective.`,
             },
           ]
