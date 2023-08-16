@@ -40,7 +40,7 @@ export default {
         }
       },
       {
-        title: `types of Bruxism Guards`,
+        title: `Types of Bruxism Guards`,
         description: `There are three main types of bruxism guards:`,
         info_list: {
           is_ordered: false,
