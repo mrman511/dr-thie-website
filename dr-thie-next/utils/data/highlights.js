@@ -66,28 +66,28 @@ export const highlights = [
 
 export const serviceHighlights = [
   {
+    id: 'restorative',
     title: 'Restorative Dental Care',
-    image_path: 'restorative.jpeg',
     icon: 'restorative.svg',
   },
   {
+    id: 'crowns_veneers',
     title: 'Crowns and Veneers',
-    image_path: 'crown.jpeg',
     icon: 'crown.svg',
   },
   {
+    id: (Math.floor(Math.random() * 2) ? 'bruxism' : 'sports' ),
     title: 'Sports and Bruxism Gaurds',
-    image_path: 'sports-guard.jpeg',
     icon: 'guard.svg',
   },
   {
+    id: 'whitening',
     title: 'Teeth Whitening',
-    image_path: 'whitening.jpeg',
     icon: 'whitening.svg',
   },
   {
+    id: 'invisalign',
     title: 'Invisalign',
-    image_path: 'invisalign.jpeg',
     icon: 'invisalign.svg',
   },
 ]
