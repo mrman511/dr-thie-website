@@ -109,7 +109,7 @@ export default {
         description: `Invisalign offers a modern and convenient approach to achieving a straight, healthy smile. With its clear aligners, comfortable fit, and impressive results, Invisalign has transformed orthodontic treatment for individuals of all ages.`,
       },
       {
-        description: `If you're considering Invisalign, schedule a consultation with a certified provider to discuss your goals and determine if this treatment is right for you. Embark on the journey to a beautifully aligned smile and experience the transformation that Invisalign can bring to your life.`,
+        description: `If you're considering Invisalign, schedule a consultation with Dr Ingrid Thie Family Dentistry to discuss your goals and determine if this treatment is right for you. Embark on the journey to a beautifully aligned smile and experience the transformation that Invisalign can bring to your life.`,
       },
     ],
   },

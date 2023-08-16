@@ -57,7 +57,7 @@ export default {
               text: 'Your dentist will select a composite resin shade that closely matches the color of your natural teeth.',
             },
             {
-              heading: '**Etching**',
+              heading: 'Etching',
               text: `The tooth's surface is gently etched to create a rough texture, allowing the bonding material to adhere effectively.`,
             },
             {
