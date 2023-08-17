@@ -10,6 +10,13 @@
   }
 }
 
+.mobileNav{
+  background: radial-gradient(circle at 100% 60%,  $background_colour 15.8%, rgba($background_colour, 0) 16%),
+    radial-gradient(circle at -5% 70%, $background_colour 10%, rgba($background_colour, 0) 10.1%),
+    radial-gradient(circle at 43% 30%, $background_colour 15%, rgba($background_colour, 0) 15.1%),
+    radial-gradient(circle at 50% 0%,  rgba($background_colour, 0) 8.9%, $raisedBackgroundColour 9%),
+}
+
 
 .main {
   background: radial-gradient(circle at 100% 60%,  $background_colour 15.8%, rgba($background_colour, 0) 16%),
@@ -87,36 +94,27 @@
   }
 }
 
+.dropMenu{
+  top: 100%;
+  height: 0;
+  background-color: $background_colour;
+}
 
-@media only screen and (min-width: 1000px){
-  
-  .mcbutton{
-    display: none
-  }
+.navbarServices{
 
-  .dropMenu{
-    top: 100%;
-    height: 0;
-    background-color: $background_colour;
-  }
-  
-  .navbarServices{
-
-    &:hover{
-      .dropMenu{
-        @include dropMenuHover()
-      }
+  &:hover{
+    .dropMenu{
+      @include dropMenuHover()
     }
   }
+}
 
-  .navbarInformation{
+.navbarInformation{
 
-    &:hover{
-      .dropMenu{
-        right: 5%;
-        @include dropMenuHover()
-      }
+  &:hover{
+    .dropMenu{
+      right: 5%;
+      @include dropMenuHover()
     }
   }
-
 }
