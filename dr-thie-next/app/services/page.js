@@ -14,7 +14,10 @@ export const metadata = {
   title: 'Services - Dr. Ingrid Thie'
 }
 
-export default function Services() {
+export default function Services(searchParams) {
+
+  console.log(searchParams);
+
   const tags = listofTags(servicesList)
   const lists = tags.map(tag => {
     const taggedServices = objsWithTag(tag, servicesList);
