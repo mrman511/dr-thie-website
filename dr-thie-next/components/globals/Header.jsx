@@ -1,26 +1,32 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from '../../public/logos/logo-full.jpg';
+import DropMenu from "./DropMenu";
+import { servicesList } from "@/utils/data/services/services";
 // import { useState } from "react";
 
 
 
 export default function Header({ styles }){
 
+  const serviceMenuList=[
+    { id: 'preventive', title: 'Preventive' }, { id: 'restorative',title: 'Restorative' }, {id: 'cosmetic', title: 'Cosmetic'}
+  ]
+
   const dropNavService = (
-    <div className={ [styles.dropServicesMenu, "w-full absolute overflow-hidden rounded-md"].join(' ') }>
-      <ul className={ ["", "relative w-full min-h-12  flex flex-wrap justify-evenly z-50"].join(' ') }>
-        <Link href='/services/#preventive-service-list'>
-          <li className='px-3 py-2 text-lg font-semibold'>Preventive</li>
-        </Link>
-        <Link href='/services/#restorative-service-list'>
-          <li className='px-3 py-2 text-lg font-semibold'>Restorative</li>
-        </Link>
-        <Link href='/services/#cosmetic-service-list'>
-          <li className='px-3 py-2 text-lg font-semibold'>Cosmetic</li>
-        </Link>
-      </ul>
-    </div>
+    <DropMenu 
+      styles={ styles }
+      list={ serviceMenuList }
+      route='/services#'
+    />
+  )
+
+  const dropNavInformation = (
+    <DropMenu 
+      styles={ styles } 
+      list={ servicesList } 
+      route='/information?service='
+    />
   )
 
 
@@ -52,8 +58,9 @@ export default function Header({ styles }){
             <Link href='/services'>Services</Link>
             { dropNavService }
           </li>
-          <li className={ ['', 'mx-3 flex justify-center text-xl font-bold'].join(' ')}>
+          <li className={ [styles.navbarInformation, 'mx-3 flex justify-center text-xl font-bold'].join(' ')}>
             <Link href="/information">Patient Information</Link>
+            { dropNavInformation }
           </li>
           <li className={ ['', 'mx-3 flex justify-center text-xl font-bold'].join(' ')}>
             <Link href="/contact">Contact</Link>

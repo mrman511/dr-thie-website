@@ -1,5 +1,16 @@
 @import './variables.scss';
 
+.dropMenu {
+
+  a{
+
+    &:hover{
+      background-color: $raisedBackgroundColour;
+    }
+  }
+}
+
+
 .main {
   background: radial-gradient(circle at 100% 60%,  $background_colour 15.8%, rgba($background_colour, 0) 16%),
     radial-gradient(circle at -5% 70%, $background_colour 10%, rgba($background_colour, 0) 10.1%),
@@ -83,22 +94,27 @@
     display: none
   }
 
+  .dropMenu{
+    top: 100%;
+    height: 0;
+    background-color: $background_colour;
+  }
+  
   .navbarServices{
-    
-    .dropServicesMenu{
-      top: 100%;
-      height: 0;
-      background-color: $background_colour;
-    }
 
     &:hover{
-      .dropServicesMenu{
-        height: auto;
-        border-top: 1px solid black;
-        border-left: 2px solid black;
-        border-right: 2px solid black;
-        border-bottom: 2px solid black;
-        background-color: $background_colour;
+      .dropMenu{
+        @include dropMenuHover()
+      }
+    }
+  }
+
+  .navbarInformation{
+
+    &:hover{
+      .dropMenu{
+        right: 5%;
+        @include dropMenuHover()
       }
     }
   }
