@@ -1,38 +1,24 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
+import { useCycle } from "framer-motion";
 import logo from '../../public/logos/logo-full.jpg';
-import DropMenu from "./DropMenu";
+
+import Navigation from "./Navigation";
+import AnimatedButton from "./AnimatedButton";
+import MobileNav from "./MobileNav";
+
 import { servicesList } from "@/utils/data/services/services";
-// import { useState } from "react";
 
 
 
 export default function Header({ styles }){
-
-  const serviceMenuList=[
-    { id: 'preventive', title: 'Preventive' }, { id: 'restorative',title: 'Restorative' }, {id: 'cosmetic', title: 'Cosmetic'}
-  ]
-
-  const dropNavService = (
-    <DropMenu 
-      styles={ styles }
-      list={ serviceMenuList }
-      route='/services#'
-    />
-  )
-
-  const dropNavInformation = (
-    <DropMenu 
-      styles={ styles } 
-      list={ servicesList } 
-      route='/information?service='
-    />
-  )
-
+  const [showMenu, toggleShowMenu] = useCycle(false, true);
 
   return (
-    <header className="w-full flex p-4 bg-white justify-between items-center">
-      <div className="w-4/6 sm:w-3/6 lg:w-2/6 h-16 sm:h-20  flex">
+    <header className="w-full h-[100px] sm:h-[110px] flex p-4 bg-white justify-between items-center z-20">
+      <div className="w-4/6 sm:w-3/6 lg:w-2/6 h-16 sm:h-20 flex z-20">
         <Link href="/" className="relative w-full h-full">
           <Image 
             src={ logo } 
@@ -45,27 +31,11 @@ export default function Header({ styles }){
         </Link>
       </div>
 
-      <div className="space-y-3 px-4 lg:hidden">
-        <div className="w-12 h-1 bg-gray-600"></div>
-        <div className="w-12 h-1 bg-gray-600"></div>
-        <div className="w-12 h-1 bg-gray-600"></div>
-      </div>
+        <AnimatedButton styles={ styles } isOpen={ showMenu } toggleState={ toggleShowMenu } />
+        <MobileNav styles={ styles } state={ showMenu } servicesList={ servicesList } />
 
       <div className={ [styles.navbar, 'hidden relative lg:block mr-4'].join(' ') }>
-        <ul className="flex items-center justify-between">
-          <li className={ ['', 'mx-3 flex justify-center text-xl font-bold'].join(' ')}><Link href='/about'>About Us</Link></li>
-          <li  className={ [styles.navbarServices, 'mx-3 flex justify-center text-xl font-bold'].join(' ')} >
-            <Link href='/services'>Services</Link>
-            { dropNavService }
-          </li>
-          <li className={ [styles.navbarInformation, 'mx-3 flex justify-center text-xl font-bold'].join(' ')}>
-            <Link href="/information">Patient Information</Link>
-            { dropNavInformation }
-          </li>
-          <li className={ ['', 'mx-3 flex justify-center text-xl font-bold'].join(' ')}>
-            <Link href="/contact">Contact</Link>
-          </li>
-        </ul>
+        <Navigation styles={ styles } servicesList={ servicesList } />
       </div>
 
     </header>

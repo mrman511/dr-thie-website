@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import heroImage from '../../public/images/heroImage.jpeg';
-import Blurb from "../globals/Blurb";
 
 export default function Hero({ styles, globalStyles, info }){
 
