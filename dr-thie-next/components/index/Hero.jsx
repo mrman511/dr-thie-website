@@ -6,7 +6,7 @@ export default function Hero({ styles, globalStyles, info }){
 
   return (
     <section className={ [styles.hero, 'w-full relative lg:h-96 lg:overflow-hidden'].join(' ') }>
-      <div className={[styles.imageContainer, "relative w-full h-96 z-10 lg:absolute lg:start-1/4 lg:ms-20"].join(' ')}>
+      <div className={[styles.imageContainer, "relative w-full h-96 lg:absolute lg:start-1/4 lg:ms-20"].join(' ')}>
         <Image 
           src={ heroImage }
           alt="Dr Ingid Thie Family Dentist"

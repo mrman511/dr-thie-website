@@ -16,7 +16,7 @@ export default function CardList({ styles, CardComponent, listClass, listId, car
   )
 
   return(
-    <section id={ id } className={ [listClass, "w-full flex flex-wrap items-center justify-center"].join(' ') }>
+    <section id={ id } className={ [listClass, "w-full flex flex-wrap items-center justify-center z-0"].join(' ') }>
       { hasHeader && hasHeader }
       { parsedCards }
     </section>

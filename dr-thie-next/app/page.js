@@ -29,7 +29,7 @@ export default function Home(searchParams) {
   return (
     <>
     <Header styles={ globalStyles }/>
-    <main className={ [indexStyles.main, 'm-4 pb-0 flex flex-col items-center'].join(' ')}>
+    <main className={ [indexStyles.main, 'm-4 pb-0 flex flex-col items-center z-10'].join(' ')}>
       <ContactLinkBar styles={ globalStyles } />
       <Hero styles={ indexStyles } globalStyles={ globalStyles }/>
       <CardList styles={ indexStyles } listClass={ indexStyles.highlightsList } CardComponent={ HighlightCard } cardData={ highlights } />

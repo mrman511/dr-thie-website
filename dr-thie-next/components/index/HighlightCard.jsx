@@ -12,7 +12,7 @@ export default function objCard({ styles, obj, i }){
   i === 3 ? darkenClass += ' lg:bg-blue-800' : '';
 
   return(
-    <article className={ [styles.highlightCard, "relative w-full h-[50vw] min-h-[220px]  sm:w-6/12 sm:h-[33vw] lg:w-[25%] lg:h-[18vw] overflow-hidden"].join(' ') }>
+    <article className={ [styles.highlightCard, "relative w-full h-[50vw] min-h-[220px] sm:w-6/12 sm:h-[33vw] lg:w-[25%] lg:h-[18vw] z-0 overflow-hidden"].join(' ') }>
       <Link href={ `/${ obj.route }#${ obj.id }` }>
         <div className={ darkenClass }></div>
         <div className={ [styles.imageContainer, "absolute h-[120%] w-[120%] z-10"].join(' ') }>
