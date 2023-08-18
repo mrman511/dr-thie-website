@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 export default function AnimatedButton({ styles, isOpen, toggleState, }){
 
   return (
-    <div onClick={ toggleState } className="p-2 hover:cursor-pointer border rounded-lg z-20">
+    <div onClick={ toggleState } className="p-2 hover:cursor-pointer rounded-lg z-20">
         <AnimatePresence >
           { !isOpen && <div className=" relative flex flex-col items-center h-[36px] w-16 lg:hidden">
             <motion.div 
