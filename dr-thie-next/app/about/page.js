@@ -4,7 +4,9 @@ import globalStyles from '@/styles/Globals.module.scss';
 
 import DrThie from '@/components/about/DrThie';
 
-import aboutStyles from '@/styles/About.module.scss'
+import aboutStyles from '@/styles/About.module.scss';
+
+import clinicData from '@/utils/data/clinicData';
 
 
 export const metadata = {
@@ -19,7 +21,7 @@ export default function About() {
     <main className='flex flex-col'>
      <DrThie styles={ aboutStyles }/>
     </main>
-    <Footer styles={ globalStyles }/>
+    <Footer styles={ globalStyles } clinicData={ clinicData }/>
     </>
   )
 }

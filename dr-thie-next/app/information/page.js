@@ -6,6 +6,7 @@ import PatientInfo from "@/components/patientInfo/PatientInfo";
 import infoStyles from '../../styles/Info.module.scss';
 
 import { servicesList } from "@/utils/data/services/services";
+import clinicData from "@/utils/data/clinicData";
 
 
 export const metadata = {
@@ -20,7 +21,7 @@ export default function Information({searchParams}) {
     <main className={ [globalStyles.main, 'm-4 p-4 flex flex-wrap justify-center'].join(' ') }>
       <PatientInfo styles={ infoStyles } globalStyles={ globalStyles } searchParams={ searchParams } servicesList={ servicesList } />
     </main>
-    <Footer styles={ globalStyles }/>
+    <Footer styles={ globalStyles } clinicData={ clinicData }/>
     </>
   )
 }
