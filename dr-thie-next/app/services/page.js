@@ -9,6 +9,7 @@ import serviceStyles from '../../styles/Service.module.scss'
 import { listofTags, objsWithTag} from '@/utils/helpers/tags';
 import { servicesList } from '@/utils/data/services/services';
 import { serviceListHeaders } from '@/utils/data/headers';
+import clinicData from '@/utils/data/clinicData';
 
 export const metadata = {
   title: 'Services - Dr. Ingrid Thie'
@@ -44,7 +45,7 @@ export default function Services(searchParams) {
         { lists }
       </section>
     </main>
-    <Footer styles={ globalStyles }/>
+    <Footer styles={ globalStyles } clinicData={ clinicData }/>
     </>
   )
 }

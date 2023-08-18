@@ -37,7 +37,7 @@ export default function Home(searchParams) {
       <ButtonLinkCard styles={ globalStyles } data={ newPatientsCard }/>
       <MapSection clinicData={ clinicData }/>
     </main>
-    <Footer styles={ globalStyles }/>
+    <Footer styles={ globalStyles } clinicData={ clinicData }/>
     </>
   )
 }

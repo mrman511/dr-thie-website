@@ -60,16 +60,8 @@
 }
 
 .footer {
-  background-color: $background_colour;
-  
-  article{
-    background-color: white;
-  }
-  
-  .foot {
-    background-color: darken($color: $background_colour, $amount: 75%);
-    color: white;
-  }
+  background: radial-gradient(circle at 88% 75%, darken($background_colour, 68%) 9.8%, rgba($background_colour, 0) 10%),
+  radial-gradient(circle at 25% 25%, darken($background_colour, 63) 15.8%, darken($background_colour, 65%) 16%);
 }
 
 .newPatientsButtonLinkCard{

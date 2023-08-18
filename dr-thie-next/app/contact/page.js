@@ -27,7 +27,7 @@ export default function Contact() {
       </article>
       <Info styles={ contactStyles } clinicData={ clinicData }/>
     </main>
-    <Footer styles={ globalStyles }/>
+    <Footer styles={ globalStyles } clinicData={ clinicData }/>
     </>
   )
 }
