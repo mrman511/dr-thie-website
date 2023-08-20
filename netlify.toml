@@ -9,5 +9,5 @@
   publish = ".next"
 
   # Default build command.
-  command = "CI= npm run build"
+  command = "CI= npx next build"
 
