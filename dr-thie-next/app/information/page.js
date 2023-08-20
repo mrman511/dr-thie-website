@@ -18,7 +18,7 @@ export default function Information({searchParams}) {
   return (
     <>
     <Header styles={ globalStyles }/>
-    <main className={ [globalStyles.main, 'm-4 p-4 flex flex-wrap justify-center'].join(' ') }>
+    <main className={ [globalStyles.main, 'relative m-4 p-4 flex flex-wrap'].join(' ') }>
       <PatientInfo styles={ infoStyles } globalStyles={ globalStyles } searchParams={ searchParams } servicesList={ servicesList } />
     </main>
     <Footer styles={ globalStyles } clinicData={ clinicData }/>
