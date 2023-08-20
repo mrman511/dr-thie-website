@@ -17,7 +17,7 @@ export default function Header({ styles }){
   const [showMenu, toggleShowMenu] = useCycle(false, true);
 
   return (
-    <header className={ [showMenu?'sticky top-0':'', "w-full h-[100px] sm:h-[110px] flex p-4 bg-white justify-between items-center z-20"].join(' ')}>
+    <header className={ [showMenu?'sticky top-0':'', "w-full h-[100px] sm:h-[110px] flex p-4 bg-white justify-between items-center z-50"].join(' ')}>
       <div className="w-4/6 sm:w-3/6 lg:w-2/6 h-16 sm:h-20 flex z-20">
         <Link href="/" className="relative w-full h-full">
           <Image 
@@ -30,8 +30,9 @@ export default function Header({ styles }){
             />
         </Link>
       </div>
-
-        <AnimatedButton styles={ styles } isOpen={ showMenu } toggleState={ toggleShowMenu } />
+      <div onClick={ toggleShowMenu } className="h-[40px] w-[50px] hover:cursor-pointer rounded-lg z-20 me-4 lg:hidden">
+        <AnimatedButton key="mobile-menu-btn" styles={ styles } isOpen={ showMenu } motinKey='show-mobile-menu-btn'/>
+      </div>
 
         <AnimatePresence mode="wait">
         <MotionConfig transition={{ duration: .3 }}>

@@ -2,7 +2,7 @@
 
 .infoNavList {
   border: 2px solid darken($background_colour, 50%);
-  background-color: rgba(darken($background_colour, 20%), .7);
+  background-color: darken($background_colour, 20%);
   
   .title {
     border-bottom: 2px solid darken($background_colour, 50%);
@@ -31,7 +31,7 @@
       
       div{
         width: 100%;
-        height: 200%;
+        height: 100%;
       }
     }
   }
