@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import heroImage from '../../public/images/heroImage.jpeg';
 
-export default function Hero({ styles, globalStyles, info }){
+export default function Hero({ styles }){
 
   return (
     <section className={ [styles.hero, 'w-full relative lg:h-96 lg:overflow-hidden'].join(' ') }>
@@ -15,7 +15,6 @@ export default function Hero({ styles, globalStyles, info }){
           placeholder='blur'
           sizes="110vw"
           />
-        {/* <div className={ [styles.heroOverlay, 'w-full h-full absolute z-10'].join(' ') }></div> */}
       </div>
       <article className={[styles.message, "w-full lg:px-8 lg:h-full lg:absolute lg:z-20 lg:top-0 lg:pe-96"].join(' ') }>
         <div className="h-full flex p-4 flex-col items-start justify-evenly lg:w-96 lg:ms-20">
@@ -28,8 +27,8 @@ export default function Hero({ styles, globalStyles, info }){
           <div className="text-md sm:text-lg font-semibold">
             <p>Call us today to book an appointment!</p>
           </div>
-          <Link href="tel:7783161843">
-            <button className="rounded-md w-48 h-12 mt-4 text-2xl self-center">Call Now</button>
+          <Link href="/contact">
+            <button className="rounded-md w-48 h-12 mt-4 text-2xl self-center">Contact Us Today!</button>
           </Link>
         </div>
       </article>

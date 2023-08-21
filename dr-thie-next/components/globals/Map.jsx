@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect, useMemo } from 'react';
-import { useLoadScript, GoogleMap, Marker, InfoWindow } from "@react-google-maps/api";
+import { useLoadScript, GoogleMap, InfoWindow } from "@react-google-maps/api";
+import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../../public/logos/logo-basic-transparent.png';
 
@@ -41,11 +42,9 @@ export default function Map({ clinicData }){
         mapTypeId={google.maps.MapTypeId.ROADMAP}
         mapContainerStyle={{ width: '100%', height: '100%' }}
       >
-        {/* <Marker position={ location }>
-        </Marker> */}
         <InfoWindow position={ location } >
             <>
-            <div className='storemapper-logo relative h-12 w-12'>
+            <div className='storemapper-logo relative h-12 w-12 mx-auto'>
               <Image 
                 src={ logo }
                 alt="Dr. Ingrid Thie - Logo"
@@ -54,9 +53,7 @@ export default function Map({ clinicData }){
                 sizes='100px'
               />
             </div>
-            <p className="storemapper.popup-address">{ clinicData.street_address }</p>
-            <p className="storemapper.popup-address">{ `${clinicData.city}, ${clinicData.region} ` }</p>
-            <p className="storemapper.popup-phone">{ clinicData.phone_number }</p>
+            <Link href={`https://maps.google.com/?q=${ address }}`} ><p className='mt-2 text-md font-semibold text-blue-600'>Get Directions</p></Link>
           </>
         </InfoWindow>
       </GoogleMap> }
