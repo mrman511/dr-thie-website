@@ -53,7 +53,7 @@ export default function Map({ clinicData }){
                 sizes='100px'
               />
             </div>
-            <Link href={`https://maps.google.com/?q=${ address }}`} ><p className='mt-2 text-md font-semibold text-blue-600'>Get Directions</p></Link>
+            <Link href={`https://maps.google.com/?q=${ address }}`}><p className='mt-2 text-md font-semibold text-blue-600'>Get Directions</p></Link>
           </>
         </InfoWindow>
       </GoogleMap> }
