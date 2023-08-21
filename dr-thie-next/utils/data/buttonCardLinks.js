@@ -4,6 +4,6 @@ export const newPatientsCard = {
   className: 'newPatients',
   link: {
     title: 'Contact Us',
-    path: '',
+    path: '/contact',
   },
 }
