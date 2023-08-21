@@ -31,7 +31,7 @@ export default function Home(searchParams) {
     <Header styles={ globalStyles }/>
     <main className={ [indexStyles.main, 'm-4 pb-0 flex flex-col items-center z-10'].join(' ')}>
       <ContactLinkBar styles={ globalStyles } />
-      <Hero styles={ indexStyles } globalStyles={ globalStyles }/>
+      <Hero styles={ indexStyles }/>
       <CardList styles={ indexStyles } listClass={ indexStyles.highlightsList } CardComponent={ HighlightCard } cardData={ highlights } />
       <CardList styles={ indexStyles } listClass={ indexStyles.servicesList } CardComponent={ ServiceCard } cardData={ serviceHighlights } headerData={ indexSevices } />
       <ButtonLinkCard styles={ globalStyles } data={ newPatientsCard }/>
