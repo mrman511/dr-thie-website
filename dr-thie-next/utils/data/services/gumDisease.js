@@ -1,5 +1,5 @@
 export default {
-  id: 'gum_desise',
+  id: 'gum_disease',
   title: 'Gum Disease Prevention',
   subheading: 'Provide information on how to prevent gum disease through proper oral hygiene and regular dental visits',
   short_description: `Prioritizing Gum Health: Our comprehensive gum disease prevention strategies empower you to maintain optimal oral wellness. Through personalized guidance on oral hygiene practices, regular checkups, and early detection, we are dedicated to preserving the health and stability of your gums. Experience the difference of proactive care as we work together to prevent gum disease and ensure your confident smile.`,

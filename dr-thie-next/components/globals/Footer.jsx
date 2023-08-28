@@ -25,7 +25,7 @@ export default function Footer({ styles, clinicData }){
             </div>
           </Link>
 
-          <Link href={`https://maps.google.com/?q=${street_address}, ${city}, ${region}`}>
+          <a target="_blank" href={`https://maps.google.com/?q=Dr.IngridThie`}>
             <div className="flex items-center">
               <div className="relative w-[25px] h-[25px] me-2">
                 <FontAwesomeIcon icon={faMapLocationDot} className="w-full h-full"/>
@@ -35,7 +35,7 @@ export default function Footer({ styles, clinicData }){
                 <p >{`${city}, ${region}, ${postal_code} `}</p>
               </address>
             </div>
-          </Link>
+          </a>
 
           <Link href={`tel:${phone_number}`}>
             <div className="flex items-center mt-2">

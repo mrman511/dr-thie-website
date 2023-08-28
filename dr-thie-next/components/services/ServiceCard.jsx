@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function ServiceCard({ styles, obj, i }){
-  const image = require(`../../public/images/services/photos/${obj.image_path}`)
+  const image = require(`../../public/images/services/photos/service-card/${obj.image_path}`)
   
   return (
     <article id={ obj.id } className={ [styles.serviceCard, 'rounded-md relative flex flex-col w-[300px] h-[450px] mx-0 my-4 sm:m-4 overflow-hidden'].join(' ') }>

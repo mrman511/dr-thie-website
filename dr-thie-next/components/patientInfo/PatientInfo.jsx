@@ -41,40 +41,6 @@ export default function PatientInfo({ styles, globalStyles, searchParams, servic
   return (
     <>
       <AnimatePresence>
-        {!searchParams.service && <motion.article
-          key="information-default"
-          initial={{ height: 'auto', width: 'auto', bottom: '40px', left: '5%' }}
-          animate={{ height: 'auto', width: 'auto', bottom: '40px', left: '5%' }}
-          exit={{ height: '30px', width: '40px', top: '20px', left: '2%', transition: { duration: .5 } }}
-          className={[styles.infoNavList, "absolute w-auto flex flex-col items-center rounded-sm z-10 overflow-hidden"].join(' ') }
-          >
-          <motion.div
-            key="info-mcbutton-leave"
-            className="absolute w-[40px] h-[30px] p-2"
-            initial={{ top: '-40px' }}
-            exit={{ top: 0, transition: { duration: .5 } }}
-            >
-            <AnimatedButton isOpen={ showInfoNav } />
-          </motion.div>
-
-          <motion.div
-            key="information-list-container"
-            initial={{ top: 0 }}
-            animate={{ top: 0 }}
-            exit={{ top: '100%', transition: { duration: .5 } }}
-            className="relative min-w-max min-h-max"
-            >
-            <div className={ [styles.title, "py-4 w-full text-center"].join(' ') }>
-              <h3 className="text-2xl font-bold">Our Provided Services:</h3>
-            </div>
-            <div className="relative w-full px-4">
-              <InfoNavList styles={ globalStyles } services={ servicesList } router={ router } is_column={ true } size={'xl'}/>
-            </div>
-          </motion.div>
-        </motion.article> }
-
-        
-
         {(searchParams.service  && !showInfoNav) && <article
           className={[styles.infoNavList, "absolute w-[40px] h-[30px] top-[20px] left-[2%] flex flex-col items-center rounded-sm z-20 overflow-hidden"].join(' ') }
           >
@@ -88,9 +54,6 @@ export default function PatientInfo({ styles, globalStyles, searchParams, servic
           { showInfoNav &&
             <div
               key="patient-info-list"
-              // initial={{ width: '40px', height: '30px', }}
-              // anitmate={{ width: 'auto', height: 'auto' }}
-              // exit={{ width: '40px', height: '30px', }}
               className="relative top-0 left-0 overflow-hidden"
             >
               <div
@@ -142,18 +105,18 @@ export default function PatientInfo({ styles, globalStyles, searchParams, servic
       </AnimatePresence>
 
       { !query && 
-        <PatientInfoDefault key='patient-info-defautl' styles={ styles } globalStyles={ globalStyles } services={ servicesList } router={ router }/>
+        <PatientInfoDefault key='patient-info-defautl' styles={ styles } globalStyles={ globalStyles } servicesList={ servicesList } router={ router }/>
       }
 
       { info && 
       <>
-        <div className="relative w-full h-52">
+        <div className="relative w-full h-64">
           <div className="absolute w-full h-full bg-blue-700 opacity-30 z-10"></div> 
           <Image 
           alt={ info.title }
-          src={ require(`../../public/images/services/photos/${ info.image_path }`) } 
+          src={ require(`../../public/images/services/photos/info-page/${ info.image_path }`) } 
           fill
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: 'cover', objectPosition: 'top' }}
           sizes="100vw"
           />
         </div>
