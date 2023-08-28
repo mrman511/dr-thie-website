@@ -1,7 +1,6 @@
 'use client'
 import { useState, useEffect, useMemo } from 'react';
 import { useLoadScript, GoogleMap, InfoWindow } from "@react-google-maps/api";
-import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../../public/logos/logo-basic-transparent.png';
 
@@ -53,7 +52,7 @@ export default function Map({ clinicData }){
                 sizes='100px'
               />
             </div>
-            <Link href={`https://maps.google.com/?q=${ address }}`}><p className='mt-2 text-md font-semibold text-blue-600'>Get Directions</p></Link>
+            <a target='_blank' href={`https://maps.google.com/?q=Dr.IngridThie}`}><p className='mt-2 text-md font-semibold text-blue-600'>Get Directions</p></a>
           </>
         </InfoWindow>
       </GoogleMap> }

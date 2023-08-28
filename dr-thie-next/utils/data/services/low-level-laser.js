@@ -1,17 +1,17 @@
 export default {
-  id: `low_lazer`,
-  title: `Low Level Lazer Therapy`,
+  id: `low_laser`,
+  title: `Low Level Laser Therapy`,
   subheading: `Elevating Healing with Low-Level Laser Therapy: Harnessing the Power of Light for Wellness.`,
   short_description: `Discover the healing potential of Low-Level Laser Therapy (LLLT) at our clinic. Using the power of focused light, LLLT is a non-invasive, painless, and effective treatment method that accelerates healing and reduces inflammation. Whether you're seeking relief from chronic pain, recovering from an injury, or aiming to enhance your body's natural healing processes, our LLLT sessions offer a safe and gentle solution. Experience the revitalizing effects of light as it penetrates deep into tissues, promoting cellular regeneration and helping you regain your optimal health and vitality.`,
   description: ``,
-  image_path: `low-level-lazer.jpeg`,
+  image_path: `low-level-laser.jpeg`,
   tags: ['restorative'],
   patient_info: {
     title: `Low Level Laser Therapy`,
     description: `Low Level Laser Therapy uses light energy from Low Level Lasers or Super Luminous Diodes to elicit cellular and biological responses in the body. A Low Level Laser (also referred to as a therapeutic or cold laser) emits coherent and focused energy that penetrates deeply to stimulate the target tissue.`,
     sections: [
       {
-        title: `How Low Level Lazer Therapy Works:`,
+        title: `How Low Level Laser Therapy Works:`,
         description: `When laser light is applied, the photons penetrate into the mitrochronic of the cell and through oxidated processes, stimulate the production of ATP, which in turn provides energy to fuel cell activity. This increased cellular energy may gield immune system modulation, pain relief, wound healing ad nerve regeneration. It may also cause a change in the cell membrane’s permeability to nitric oxide and calcium ions, and stimulate the realse of growth factors. This in turn appears to laed to a number of secondary and tertiary clinic effects, namely:`,
         info_list: {
           is_ordered: false,
@@ -61,7 +61,7 @@ export default {
               text: `Treatment with Low Level Laser first to provide analgesia, then follow with an application of dentin primer and bond. Success rates of 85% have been reported. This may be due to the photography’s ability to reduce conduction of C-fibers, which carry pulpal pain, as well as stimulation of B-endorphins.`,
             },
             {
-              heading: `Safety Of Low Level Lazer Therapy`,
+              heading: `Safety Of Low Level Laser Therapy`,
               text: `There are no clinical significant side-effects to Low Level Laser Therapy. A substantial body of sound scientific date has shown this technology to be safe and effective.`,
             },
           ]
