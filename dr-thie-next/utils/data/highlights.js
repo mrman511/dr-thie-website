@@ -11,7 +11,7 @@ export const highlights = [
     },
     image: {
       title: 'Our Team',
-      path: 'team.jpeg',
+      path: 'team.jpg',
     }
   },
 

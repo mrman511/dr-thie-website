@@ -5,7 +5,7 @@ export default function DropMenu({ styles, list, route, isColumn }){
   const textSize = isColumn?'text-xl':'text-lg'
 
   const parsedList = list.map((item, i) => 
-        <Link key={`${ item.id }-link-${ i }`} href={`${ route }${ item.id }`} className="rounded-md">
+        <Link key={`${ item.id }-link-${ i }`} href={`${ route }${ item.id }`} className="rounded-md my-1">
           <li className={`px-3 py-2 ${ textSize } font-semibold`}>{ item.title }</li>
         </Link>
   )
