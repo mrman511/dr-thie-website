@@ -47,14 +47,14 @@ export default function Navigation({ styles, servicesList, isColumn, size }){
           <Link href='/services'>Services</Link>
           <FontAwesomeIcon icon={ faChevronDown } className={ iconClass } onClick={ togglesShowDropServices }/>
         </div>
-        { !isColumn ? dropNavService :  showDropServices && dropNavService  }
+        { !isColumn ? dropNavService : showDropServices && dropNavService  }
       </li>
       <li className={ [styles.navbarInformation, lineClass].join(' ')}>
         <div className="flex items-center">
           <Link href="/information">Patient Information</Link>
           <FontAwesomeIcon icon={ faChevronDown } className={ iconClass } onClick={ togglesShowDropInformation } />
         </div>
-        { !isColumn ? dropNavInformation:  showDropInformation && dropNavInformation }
+        { !isColumn ? dropNavInformation: showDropInformation && dropNavInformation }
       </li>
       <li className={ ['', lineClass].join(' ')}>
         <Link href="/contact">Contact</Link>

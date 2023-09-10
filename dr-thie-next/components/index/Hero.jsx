@@ -19,7 +19,7 @@ export default function Hero({ styles }){
       <article className={[styles.message, "w-full lg:px-8 lg:h-full lg:absolute lg:z-20 lg:top-0 lg:pe-96"].join(' ') }>
         <div className="h-full flex p-4 flex-col items-start justify-evenly lg:w-96 lg:ms-20">
           <div className="text-md sm:text-xl">
-            <p>Proudly serving the community of London Ontario for over 35 years!</p>
+            <p>Proudly serving the community of London Ontario for over 25 years!</p>
           </div>
           <div className="text-2xl sm:text-3xl font-bold my-4">
             <h3 className=''>Bringing Smiles to Life: Your Dental Care Experts</h3>
