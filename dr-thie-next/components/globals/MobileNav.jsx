@@ -17,7 +17,7 @@ export default function MobileNav({ styles, state, serviceList }){
       <motion.div
         key='mobile-nav-navbar'
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { delay: .5 } }}
+        animate={{ opacity: 1, transition: { delay: .25 } }}
         className={ [styles.navbar, "relative self-center w-7/12 min-h-[300px] max-h-[calc(100vh-100px)] sm:max-h-[calc(100vh-110px)] pt-12 overflow-y-scroll no-scrollbar"].join(' ') }
       >
         <Navigation styles={ styles } servicesList={ servicesList } isColumn={ true }/>

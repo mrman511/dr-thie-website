@@ -11,6 +11,7 @@ import oralCancer from "./oralCancer";
 import rootCanal from './rootCanal';
 import sportsGuards from "./sports-guards";
 import whitening from "./whitening";
+import itero from "./itero";
 
 export const servicesList = [
   bonding,
@@ -21,6 +22,7 @@ export const servicesList = [
   gumDisease,
   infantCare,
   invisalign,
+  itero,
   lowLevelLaser,
   oralCancer,
   sportsGuards,
