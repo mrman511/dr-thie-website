@@ -26,16 +26,12 @@ export default function PatientInfoDefault({ styles, globalStyles, servicesList,
             >
           </div>
 
-          <div
-            key="information-list-container"
-            
-            className="relative min-w-max min-h-max"
-            >
+          <div key="information-list-container" className="relative min-w-max min-h-max">
             <div className={ [styles.title, "py-4 w-full text-center"].join(' ') }>
               <h3 className="text-2xl font-bold">Our Provided Services:</h3>
             </div>
             <div className="relative w-full px-4">
-              <InfoNavList styles={ globalStyles } services={ servicesList } router={ router } is_column={ true } size={'xl'}/>
+              < InfoNavList styles={ globalStyles } services={ servicesList } router={ router } is_column={ true } size={'xl'}/>
             </div>
           </div>
         </article>

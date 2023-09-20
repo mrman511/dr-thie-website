@@ -12,10 +12,19 @@ export default function InfoSection({ section }){
       <ul className="list-disc">{ parsedList }</ul>;
   }
 
+  const parsedDescription = []
+  if (typeof section.description === 'object'){
+    for (let description of section.description){
+      parsedDescription.push(<p className="mt-4">{ description }</p>)
+    } 
+  } else {
+    parsedDescription.push(<p>{section.description}</p>)
+  }
+
   return (
     <article id={ id } className="my-20">
       <h3 className="text-2xl sm:text-3xl font-semibold mb-4">{ section.title }</h3>
-      <p className="">{ section.description }</p>
+      { ...parsedDescription }
       { parsedList }
     </article>
   )

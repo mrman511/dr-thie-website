@@ -90,4 +90,9 @@ export const serviceHighlights = [
     title: 'Invisalign',
     icon: 'invisalign.svg',
   },
+  {
+    id: 'itero',
+    title: 'iTero Scanning',
+    icon: 'itero.svg',
+  },
 ]
