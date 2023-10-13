@@ -6,7 +6,7 @@ import { useCycle } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-export default function Navigation({ styles, servicesList, isColumn, size }){
+export default function Navigation({ styles, servicesList, isColumn}){
 
   const [showDropServices, togglesShowDropServices] = useCycle(false, true)
   const [showDropInformation, togglesShowDropInformation] = useCycle(false, true)

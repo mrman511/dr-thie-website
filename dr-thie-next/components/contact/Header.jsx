@@ -1,4 +1,4 @@
-export default function Header(styles){
+export default function Header(){
 
   return (
     <article>

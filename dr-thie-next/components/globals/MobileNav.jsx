@@ -2,7 +2,7 @@ import { servicesList } from "@/utils/data/services/services";
 import { motion } from "framer-motion";
 import Navigation from "./Navigation";
 
-export default function MobileNav({ styles, state, serviceList }){
+export default function MobileNav({ styles }){
 
   return (
     <motion.section

@@ -24,7 +24,7 @@ export default function Info({ styles, clinicData }){
         <div className="w-full h-[450px] md:w-7/12 rounded-md overflow-hidden">
           <Map clinicData={ clinicData }/>
         </div>
-        <div className="">
+        <div>
           <ClinicHours days={ hours }/>
         </div>
       </section>

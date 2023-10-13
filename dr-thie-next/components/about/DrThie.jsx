@@ -1,6 +1,6 @@
 import { drThie as dentist } from "@/utils/data/employees";
 
-export default function Dentist({ styles }){
+export default function Dentist(){
 
   const baseClasses = 'w-6/6 sm:w-5/6 md:w-4/6 px-4 sm:px-8 py-2 text-center self-center'
 

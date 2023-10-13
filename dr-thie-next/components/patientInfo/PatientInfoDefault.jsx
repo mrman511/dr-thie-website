@@ -1,9 +1,9 @@
 import Image from "next/image";
+
 import CardListHeader from "../globals/CardListHeader";
+import InfoNavList from "../globals/InfoNavList";
 
 import image from '../../public/images/clinic-photos/hallway-tall.jpg';
-import InfoNavList from "../globals/InfoNavList";
-// import image from '../../public/images/clinic-photos/exam-chair-and-window.jpg';
 
 export default function PatientInfoDefault({ styles, globalStyles, servicesList, router}){
 
