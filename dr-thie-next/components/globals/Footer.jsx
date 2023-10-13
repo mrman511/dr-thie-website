@@ -12,8 +12,6 @@ export default function Footer({ styles, clinicData }){
 
   return (
     <footer className={ [styles.footer, 'w-full flex flex-wrap p-4 justify-center md:justify-evenly text-white'].join(' ') }>
-      
-
       <article className='w-full max-w-max py-8 sm:w-3/6' >
         <div className="flex flex-col max-sm:items-center p-4 text-xl font-semibold">
           <Link href="/contact">

@@ -22,14 +22,14 @@
   .imageContainer{
     top: 0;
     left: 0;
-    transition: all 6s ease-out;
+    transition: all 8s linear;
   }
 
   &:hover{
 
     .imageContainer{
-      top: -20%;
-      left: -20%;
+      top: -10%;
+      left: -10%;
     }
   }
 }
