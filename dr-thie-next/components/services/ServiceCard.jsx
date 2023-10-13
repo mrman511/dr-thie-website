@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ServiceCard({ styles, obj, i }){
+export default function ServiceCard({ styles, obj }){
   const image = require(`../../public/images/services/photos/service-card/${obj.image_path}`)
   
   return (

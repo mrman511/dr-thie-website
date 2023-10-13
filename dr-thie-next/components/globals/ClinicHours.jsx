@@ -1,4 +1,4 @@
-export default function ClinicHours({ styles, days }){
+export default function ClinicHours({ days }){
 
   const parsedDays = [];
 

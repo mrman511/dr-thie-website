@@ -23,7 +23,7 @@ export const metadata = {
   title: 'Dr. Ingrid Thie Family Dentist'
 }
 
-export default function Home(searchParams) {
+export default function Home() {
 
   
   return (

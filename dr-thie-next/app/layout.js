@@ -1,7 +1,6 @@
 import './globals.css'
-import { Inter, Cormorant_Garamond } from 'next/font/google'
+import { Cormorant_Garamond } from 'next/font/google'
 
-// const inter = Inter({ subsets: ['latin'] })
 const garamond = Cormorant_Garamond({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],

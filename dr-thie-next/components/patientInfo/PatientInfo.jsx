@@ -2,19 +2,12 @@
 
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import Image from "next/image";
-
-import { AnimatePresence, motion, MotionConfig, useCycle } from "framer-motion";
+import { useCycle } from "framer-motion";
 
 import PatientInfoDefault from "@/components/patientInfo/PatientInfoDefault.jsx";
 import PatientInfoPage from "@/components/patientInfo/PatientInfoPage";
 
-import InfoNavList from "../globals/InfoNavList";
-
 import getService from "@/utils/helpers/getService";
-
-import AnimatedButton from "../globals/AnimatedButton";
-
 
 export default function PatientInfo({ styles, globalStyles, searchParams, servicesList }){
   const router = useRouter();
